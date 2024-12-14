@@ -17,11 +17,14 @@ abstract public class Room {
 
     public String toString() {
         return String.format("""
-                        Room: room type: '%s'
+                        room type: '%s'
                         room id: '%s'
                         room number: '%d'
                         room capacity: '%d'
                         room price: '%f'""",
                 this.getRoomType(), id.toString(), number, capacity, price);
+    }
+    public double getPrice() {
+        return price;
     }
 }
