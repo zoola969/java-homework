@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.UUID;
 
-abstract public class Room {
+abstract public class Room implements Serializable {
     UUID id;
     int number;
     int capacity;
